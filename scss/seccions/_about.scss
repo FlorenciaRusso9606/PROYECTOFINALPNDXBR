@@ -1,0 +1,74 @@
+/*inicio de la pagina about*/
+@import "../utilities/vars";
+.main-about {
+    display: grid;
+    grid-template-areas:
+    "main-about-img-p main-about-img-p"
+    "main-artist main-labels"
+    "main-artist main-labels";
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin:1rem;
+    .main-about-img-p{
+        grid-area: main-about-img-p;
+        padding-bottom: 0.5rem;
+        @include flex(center, center);
+        @include border-bottom;
+        margin-bottom: 4rem;
+        .main-about-p{
+            margin: 1.3rem;
+            padding: 1.2rem 0rem;
+            font-size: $text-medium-large;
+            line-height: 1.9rem;
+            font-weight: lighter;
+        }
+    }
+    .main-artist { 
+        grid-area: main-artist;
+        margin-top: 3rem;
+        margin-bottom: 4.5rem;
+        h1{
+            padding-left: 1.2rem;
+            font-size: $text-medium-large;
+            width: $widht-completo - 5;
+            @include border-bottom;
+            text-transform: uppercase;
+        }
+        .artist-list{
+            display: flex; 
+            div{
+                ul{
+                    margin-top: 1rem;
+                    margin-right: 1.2rem;
+                    margin-bottom: 2rem;
+                    li{
+                        list-style: none;
+                        padding: 0.5rem 0rem;
+                    }
+                }
+            }  
+        }
+    }
+    .main-labels{
+        grid-area: main-labels;
+        margin-top: 3rem;
+        margin-bottom: 4.5rem;
+        h2{
+            padding-left: 1.2rem;
+            @include border-bottom;;
+            text-transform: uppercase;
+            font-size: $text-medium-large;
+        }
+        div{
+            ul{
+                margin-top: 1.2rem;
+                li{
+                    list-style: none;
+                    padding: 0.5rem 0rem;
+                    margin: 0rem;
+                }
+            }
+        }
+    }
+}
+/*fin de la pagina about*/

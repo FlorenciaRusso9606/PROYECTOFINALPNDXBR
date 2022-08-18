@@ -1,0 +1,27 @@
+@import "../utilities/vars";
+@import "../utilities/mixins";
+footer{
+    background-color: $bg-black;
+    @include flex(center, center);
+    ul{
+        .derechos{
+            margin-right:1.5rem;
+            font-size: $text-small;
+            display: inline-block;
+        }
+        li{
+            display: inline-block;
+            list-style: none;
+            font-size: $text-small;
+            text-align: center;
+            padding: 1rem 0.7rem 0rem 0rem;
+            a{
+                text-decoration: none;
+                color : $color-secund;
+                &:hover{
+                    color: $color-primario;
+                }
+            }
+        }
+    }  
+}

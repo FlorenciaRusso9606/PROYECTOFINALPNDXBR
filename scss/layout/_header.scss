@@ -1,0 +1,44 @@
+@import "../utilities/mixins";
+@import "../utilities/vars";
+nav{
+    @include flex(space-between, center);
+    ul{
+        .nav-bar{
+            border-right: 0.07rem solid $color-primario;
+        }
+        li{
+            list-style: none;
+            padding: 0.3rem 1.1rem;
+            a{
+                color: $color-primario;
+                font-weight: 100;
+                font-size: $text-small;
+                text-decoration: none;
+                text-transform: uppercase;
+                position: relative;
+                &:hover{
+                    color: $color-primario;
+                }
+                &:after{
+                    content: "";
+                    background-color: $color-primario;
+                    position: absolute;
+                    left:0;
+                    top: ($widht-completo+ 0.125);
+                    width: $widht-completo;
+                    height: 0.065rem;
+                    opacity: 0;
+                    transition: 0.3s;
+                }
+                &:hover::after{
+                    opacity: 0.9;
+                }
+            }
+            .selected{
+                &:after{
+                     opacity: 0.9;
+                }
+            } 
+        }
+    }
+}

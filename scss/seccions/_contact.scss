@@ -1,0 +1,54 @@
+/*inicio de la pagina contact*/
+@import "../utilities/mixins";
+.main-contact{
+    height: 100vh;
+    @include flex(center, center);
+    grid-template-areas: 
+    "h1"
+    "form";
+    flex-direction: column;
+    row-gap: 1rem;
+    margin: 4rem;
+    h1{
+        grid-area: h1;
+        display: inline-block;
+        text-align: center;
+        width: 40rem;
+        font-size: $subtitle;
+        @include border-bottom;
+    }
+    form{
+        grid-area: form;
+        padding: 1rem;
+        @include flex(center, center);
+        flex-direction:column;
+        .form-name-email{
+            input{
+                margin: 0.4rem;
+                padding: 0.2rem;
+                width: 31rem;
+            }
+        }
+        .form-box{
+            h3{
+                text-align: center;
+                margin: 0.4rem;
+                padding: 0.2rem;
+                font-size: $text-medium-large;
+            }
+            textarea{
+                margin: 0.4rem;
+                padding: 0.2rem;
+                width: 31rem;
+                height: 20rem;
+                font-size: $text-medium;
+            }
+            input{
+                margin: 0.4rem;
+                padding: 0.2rem;
+                
+            }
+        } 
+    }
+}
+/*fin de la pagina contact*/

@@ -1,0 +1,26 @@
+@import "utilities/vars";
+@mixin btn-size($width, $heigth, $border-radius){
+    width: $width;
+    height: $heigth;
+    border-radius: $border-radius;
+}
+@mixin btn{
+    background-color: $bg-btn;
+    border: 0.1rem solid $color-btn;
+    transition: 0.2s;
+    color: $color-secund;
+}
+@mixin border-bottom{
+    border-bottom: 0.125rem solid $color-primario;
+}
+@mixin btn-hover{
+    background-color: $bg-btn-hover;
+    border: 0.1rem solid $color-primario;
+    color: $color-primario;
+}
+
+@mixin flex($x, $y){
+    display: flex;
+    justify-content: $x;
+    align-items: $y;
+}

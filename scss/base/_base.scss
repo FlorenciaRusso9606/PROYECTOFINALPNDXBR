@@ -1,0 +1,49 @@
+/*base de la pagina*/
+@import "../utilities/mixins";
+@import"../utilities/vars";
+.content-body{
+    font-family: $font-principal;
+    color: $color-primario;
+    .content-pages{
+        background: $bg-pages;
+        background:  linear-gradient(90deg, rgba(111,69,190,1) 0%, rgba(33,22,157,1) 100%);
+    }
+}
+.ir-nav {
+    position: fixed;
+    bottom: 2.5rem;
+    right: 1rem;
+    display: inline-block;
+    margin: 1rem;
+    @include btn-size (4.5rem, 4.5rem, 3rem);
+    text-align: center;
+    @include btn;
+    a{
+        color: $color-secund;
+        text-align: center;
+        font-size: $subtitle;
+        font-weight: 100;
+        i{
+            padding: 0.6rem;
+        }
+        &:hover{
+            color: $color-primario;
+        }
+    }
+    &:hover{
+        @include btn-hover;
+    }
+}
+.btn-estilos{
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    @include btn-size(8rem, 2.6rem, 0rem);
+    @include btn;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    font-weight: 400;    
+    &:hover{
+        @include btn-hover;
+    }
+}

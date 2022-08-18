@@ -1,0 +1,477 @@
+/*inicio de mediaqueries*/
+@import"../utilities/vars";
+
+@media only screen and (max-width:1200px){
+    /*inicio de las características de la página about*/
+    .main-about {
+        display: grid;
+        grid-template-areas:
+        "main-about-img-p" 
+        "main-about-img-p"
+        "main-artist"
+        "main-labels";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin:1rem;
+        .main-about-img-p{
+            flex-direction:column;
+        }
+        .main-artist {
+            h1{
+                width: $widht-completo;
+            }
+            .artist-list{
+                display: grid;
+                grid-template-areas: "column1 column2 column3"
+                "column4 column5 column5";
+                .column1{
+                    grid-area: column1;
+                }
+                .column2{
+                    grid-area: column2;
+                }
+                .column3{
+                    grid-area: column3;
+                }
+                .column4{
+                    grid-area: column4;
+                }
+                .column5{
+                    grid-area: column5;
+                }
+            } 
+        }
+        .main-labels{
+          h2{
+            width: $widht-completo ;
+            }
+            
+        }
+    } 
+    /*fin de las características de la página about*/
+}
+@media only screen and (max-width: 1024px) {
+    section {
+        div{
+            ul{
+                margin-top: 1rem;
+                margin-right: 1rem;
+            }  
+        } 
+    }
+    .content-index{
+        header{
+            nav{
+                ul{
+                    .nav-bar{
+                        border-right: none;
+                    }
+                }
+            }
+        }
+        
+    }
+           
+    /*inicio de las características de la página about*/
+    .main-about {
+        display: grid;
+        grid-template-areas:
+        "main-about-img-p"
+        "main-artist "
+        "main-labels";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin:1rem;
+    }
+    /*fin de las características de la página about*/
+    /*inicio de las características de la página gallery*/
+    .main-gallery{
+        h1{
+            margin: 0.5rem 2rem;
+            width: ($widht-completo - 7);
+        } 
+        h2{
+            margin: 0.5rem 2rem;
+            width: ($widht-completo - 7);
+        }  
+        .gallery{
+            .gallery-container{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-auto-flow: 28.125rem;
+                gap: 2rem;
+                padding: 2rem;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+             
+    }
+    
+    /*fin de las características de la página gallery*/
+     /* inicio de características de la página Contact*/
+    .main-contact{
+        height: 100vh;
+        h1{
+            text-align: center;
+            width: 25rem;
+            font-size: $text-large;
+        }
+        form{
+            padding: 1rem;
+            input{
+                margin: 0.4rem;
+                padding: 0.2rem;
+            }
+            h3{
+                margin: 0.4rem;
+                padding: 0.2rem;
+            }
+            .form-name-email{
+                input{
+                    width: 25rem;
+                    height: 2rem;
+                    font-size: 1rem;   
+                } 
+            }
+            .form-box{
+                @include flex (center, center);
+                flex-direction: column;
+                textarea{
+                    width: 25em;
+                    height: 20rem;
+                    font-size: $text-medium;
+                }
+            }
+        }
+    }
+    /* cierre de características de la página Contact */
+}
+@media only screen and (max-width:992px){
+    /* inicio de características del header*/
+    nav{
+        @include flex(space-between, center);
+        ul{
+            .nav-bar{
+                border-right:none;
+            }
+        }
+    }
+    /* cierre de características del header*/
+}
+@media only screen and (max-width: 768px) {
+ /* inicio de características de la página Index*/
+    .logo-b{
+        display: none;
+    }
+    /* cierre de características de la página Index*
+    /* inicio de características de la página About*/
+     .main-about {
+        display: grid;
+        grid-template-areas:
+        "main-about-img-p" 
+        "main-about-img-p"
+        "main-artist"
+        "main-labels";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin:1rem;
+        .main-about-img-p{
+            flex-direction:column;
+            .main-about-p{
+                font-size: $text-medium;
+           }
+        }
+        .main-artist {
+            h1{
+                width: $widht-completo;
+            }
+            .artist-list{
+                display: grid;
+                grid-template-areas: "column1 column2"
+                "column3 column4"
+                "column5 column5" ;
+                .column1{
+                    grid-area: column1;
+                }
+                .column2{
+                    grid-area: column2;
+                }
+                .column3{
+                    grid-area: column3;
+                }
+                .column4{
+                    grid-area: column4;
+                }
+                .column5{
+                    grid-area: column5;
+                }
+            } 
+        }
+        .main-labels{
+          h2{
+            width: $widht-completo ;
+            }
+            
+        }
+    }  
+    /* cierre de características de la página About*/
+    /* inicio de características de la página Gallery*/
+   .main-gallery{ 
+        .gallery{
+            h1{
+                width: $widht-completo - 11;
+            }
+            h2{
+                width: $widht-completo - 11;
+            }
+        }
+    }        
+    /* cierre de características de la página Gallery*/
+    /* inicio de características de la página Contact*/
+    .main-contact{
+        h1{
+            width: 25rem;
+        }
+        form{
+            padding: 1rem;
+            input{
+                margin: 0.4rem;
+                padding: 0.2rem;
+            }
+            .form-name-email{
+                input{
+                    margin: 0.2rem;  
+                } 
+            }
+        }
+    }
+     /* cierre de características de la página Contact*/
+}
+@media only screen and (max-width: 480px) {
+    /*inicio de características generales de las páginas*/
+    .logo-b{
+        display: none;
+    }
+    .main-index{
+        @include flex(end, center);
+        height: 80vh;
+       div{
+           @include flex(center, center);
+            img{
+               width: $widht-completo;
+                height:100%;
+            }
+        }
+    }
+    /*cierre de características generales de las páginas*/
+    /* inicio de características de la página About*/
+    .main-about {
+        margin: 0.3rem;
+        .main-about-img-p{
+            flex-direction: column;
+        }
+        .main-artist {
+             h1{
+                font-size: $text-medium;
+            } 
+            font-size: $text-small;           
+        }
+        .main-labels{
+            h2{
+             font-size: $text-medium;
+            }
+            font-size: $text-small;
+        }
+    }  
+    /* cierre de características de la página About*/
+    /* inicio de características de la página Gallery*/
+    .main-gallery{ 
+        .gallery{
+            h1{
+                width: $widht-completo - 13;
+                font-size: $text-medium-large;
+            }
+            h2{
+                width: $widht-completo - 13;
+                font-size: $text-medium-large;
+            }
+            .gallery-container{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-auto-flow: 28.125rem;
+                gap: 2rem;
+                padding: 2rem;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+             
+    }
+    /* cierre de características de la página Gallery*/
+    /* inicio de características de la página Contact*/
+    .main-contact{
+        height: 100vh;
+        h1{
+            width: 18rem;
+            font-size: $text-large;
+            margin-right:0rem 1rem 0rem 1rem;
+        }
+        form{
+            padding: 1rem;
+            input{
+                margin: 0.2rem;
+                padding: 0.2rem;
+            }
+            .form-name-email{
+                input{
+                    padding: 0.2rem;
+                    margin:0.2rem;
+                    width: 18rem;
+                    height: 2rem;
+                    font-size: 1rem;   
+                } 
+            }
+            .form-box{
+                @include flex (center, center);
+                flex-direction: column;
+                h3{
+                    padding: 0.4rem;
+                    font-size: $text-medium-large;
+                    margin: 0.2rem;
+                }
+                textarea{
+                    width: 18rem;
+                    height: 20rem;
+                    font-size: $text-medium;
+                }
+            }
+        }
+    }
+    /* cierre de características de la página Contact*/
+}
+@media only screen and (max-width: 320px){
+    /*inicio de las características del footer*/
+    footer{
+        ul{
+            .derechos{
+                margin-right:0.5rem;
+            }
+        }
+    }
+    
+    /*cierre de las características del footer*/
+
+    /* inicio de características de la página About*/
+     .main-about {
+        display: grid;
+        grid-template-areas:
+        "main-about-img-p" 
+        "main-about-img-p"
+        "main-artist"
+        "main-labels";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin:1rem;
+        .main-about-img-p{
+            flex-direction:column;
+            .main-about-p{
+                font-size: $text-small;
+            }
+        }
+        .main-artist {
+            h1{
+                width: $widht-completo;
+                font-size: $text-medium;
+            }
+            .artist-list{
+                display: grid;
+                grid-template-areas: "column1" 
+                "column2"
+                "column3"
+                "column4"
+                "column5" ;
+                font-size: $text-small;
+                .column1{
+                    grid-area: column1;
+                }
+                .column2{
+                    grid-area: column2;
+                }
+                .column3{
+                    grid-area: column3;
+                }
+                .column4{
+                    grid-area: column4;
+                }
+                .column5{
+                    grid-area: column5;
+                }
+            } 
+        }
+        .main-labels{
+          h2{
+            width: $widht-completo ;
+            font-size: $text-medium;
+            }
+            font-size: $text-small;
+            
+        }
+    }  
+    /* cierre de características de la página About*/
+    /* inicio de características de la página Gallery*/
+    .main-gallery{ 
+        .gallery{
+            h1{
+                width: $widht-completo - 20;
+            }
+            h2{
+                width: $widht-completo - 20;
+            }
+        }
+             
+    }
+    /* cierre de características de la página Gallery*/
+    /* inicio de características de la página Contact*/
+    .main-contact{
+        height: 100vh;
+        h1{
+            width: 16rem;
+            font-size: $text-medium-large;
+            margin-right:0.5rem;
+            margin-left: 0.5rem;
+        }
+        form{
+            input{
+                padding: 0.2rem;
+            }
+            .form-name-email{
+                input{
+                    width: 16rem;
+                    height: 2rem;
+                    font-size: 1rem;   
+                } 
+            }
+            .form-box{
+                @include flex (center, center);
+                flex-direction: column;
+                h3{
+                    padding: 0.2rem;
+                }
+                textarea{
+                    width: 16rem;
+                    height: 20rem;
+                    font-size: $text-medium;
+                }
+            }
+        }
+    }
+    /* cierre de características de la página Contact*/
+  /* cierre de media queries*/ 
+}

@@ -1,0 +1,15 @@
+/*inicio de la pagina store*/
+@import "../utilities/vars";
+.main-store{
+    padding: 0.8rem 2rem;
+    .card-store{
+        background-color: $bg-black;
+        .card-img-top{
+            padding: 0.5rem 0rem;
+        }
+        .btn{
+            font-size: $text-small;
+        }
+    }
+}
+/*fin de la pagina store*/
