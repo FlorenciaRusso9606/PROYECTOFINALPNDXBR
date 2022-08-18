@@ -2,6 +2,7 @@
 @import "../utilities/vars";
 nav{
     @include flex(space-between, center);
+    height: 10vh;
     ul{
         .nav-bar{
             border-right: 0.07rem solid $color-primario;

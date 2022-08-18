@@ -4,7 +4,7 @@
 }
 .main-index{
     @include flex(center, center);
-    height: 85vh;
+    height: 100vh;
    div{
        @include flex(center, center);
         img{

@@ -2,6 +2,7 @@
 @import "../utilities/mixins";
 footer{
     background-color: $bg-black;
+    height: 10vh;
     @include flex(center, center);
     ul{
         .derechos{

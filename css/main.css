@@ -62,6 +62,7 @@
 
 footer {
   background-color: black;
+  height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -84,7 +85,8 @@ footer {
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  height: 10vh; }
   nav ul .nav-bar {
     border-right: 0.07rem solid whitesmoke; }
   nav ul li {
@@ -122,7 +124,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 85vh; }
+  height: 100vh; }
   .main-index div {
     display: flex;
     justify-content: center;
@@ -134,7 +136,7 @@ nav {
 /*inicio de la pagina about*/
 .main-about {
   display: grid;
-  grid-template-areas: "main-about-img-p main-about-img-p" "main-artist main-labels" "main-artist main-labels";
+  grid-template-areas: "main-about-img-p main-about-img-p" "main-artist main-labels" "main-artist main-labels";
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 1fr;
   margin: 1rem; }
@@ -234,7 +236,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  grid-template-areas: "h1" "form";
+  grid-template-areas: "h1" "form";
   flex-direction: column;
   row-gap: 1rem;
   margin: 4rem; }
@@ -277,7 +279,7 @@ nav {
   /*inicio de las características de la página about*/
   .main-about {
     display: grid;
-    grid-template-areas: "main-about-img-p"  "main-about-img-p" "main-artist" "main-labels";
+    grid-template-areas: "main-about-img-p"  "main-about-img-p" "main-artist" "main-labels";
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     margin: 1rem; }
@@ -287,7 +289,7 @@ nav {
       width: 100%; }
     .main-about .main-artist .artist-list {
       display: grid;
-      grid-template-areas: "column1 column2 column3" "column4 column5 column5"; }
+      grid-template-areas: "column1 column2 column3" "column4 column5 column5"; }
       .main-about .main-artist .artist-list .column1 {
         grid-area: column1; }
       .main-about .main-artist .artist-list .column2 {
@@ -311,7 +313,7 @@ nav {
   /*inicio de las características de la página about*/
   .main-about {
     display: grid;
-    grid-template-areas: "main-about-img-p" "main-artist " "main-labels";
+    grid-template-areas: "main-about-img-p" "main-artist " "main-labels";
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     margin: 1rem; }
@@ -382,7 +384,7 @@ nav {
     /* inicio de características de la página About*/
   .main-about {
     display: grid;
-    grid-template-areas: "main-about-img-p"  "main-about-img-p" "main-artist" "main-labels";
+    grid-template-areas: "main-about-img-p"  "main-about-img-p" "main-artist" "main-labels";
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     margin: 1rem; }
@@ -394,7 +396,7 @@ nav {
       width: 100%; }
     .main-about .main-artist .artist-list {
       display: grid;
-      grid-template-areas: "column1 column2" "column3 column4" "column5 column5"; }
+      grid-template-areas: "column1 column2" "column3 column4" "column5 column5"; }
       .main-about .main-artist .artist-list .column1 {
         grid-area: column1; }
       .main-about .main-artist .artist-list .column2 {
@@ -516,7 +518,7 @@ nav {
   /* inicio de características de la página About*/
   .main-about {
     display: grid;
-    grid-template-areas: "main-about-img-p"  "main-about-img-p" "main-artist" "main-labels";
+    grid-template-areas: "main-about-img-p"  "main-about-img-p" "main-artist" "main-labels";
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     margin: 1rem; }
@@ -529,7 +531,7 @@ nav {
       font-size: 1rem; }
     .main-about .main-artist .artist-list {
       display: grid;
-      grid-template-areas: "column1"  "column2" "column3" "column4" "column5";
+      grid-template-areas: "column1"  "column2" "column3" "column4" "column5";
       font-size: 0.8rem; }
       .main-about .main-artist .artist-list .column1 {
         grid-area: column1; }
